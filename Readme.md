@@ -1,5 +1,5 @@
-# PolkaCreator Token
-This is development repo for PolkaCreator token.
+# CreatorChain Token
+This is development repo for CreatorChain token.
 Token is ERC20 standard from [openzeppelin](https://openzeppelin.com).
 
 # Run in local
