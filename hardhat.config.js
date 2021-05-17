@@ -1,5 +1,6 @@
 // For deploy
 require('@nomiclabs/hardhat-ethers');
+require("@nomiclabs/hardhat-etherscan");
 
 // For test
 require("@nomiclabs/hardhat-web3");
@@ -11,6 +12,7 @@ require('dotenv').config();
 
 const INFURA_API_KEY = process.env.INFURA_API_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const SCAN_API_KEY = process.env.SCAN_API_KEY
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
@@ -56,5 +58,8 @@ module.exports = {
   },
   mocha: {
     timeout: 0,
+  },
+  etherscan: {
+    apiKey: SCAN_API_KEY
   },
 };
